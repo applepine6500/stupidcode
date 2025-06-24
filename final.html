@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice and Spark Grill & Climate Change Bot</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #00796b;
+            color: white;
+        }
+        .order-button {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 9px 11px;
+            border-radius: 9px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .order-button:hover {
+            background-color: #ff4500;
+        }
+        #menu {
+            margin-top: 20px;
+        }
+        #chatbot {
+            margin: 20px auto;
+            padding: 15px;
+            border: 1px solid #00796b;
+            border-radius: 5px;
+            width: 500px;
+            background-color: white;
+        }
+        #messages {
+            height: 200px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #00796b;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #00796b;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #004d40;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>............ Spice and Spark Grill ............. </h1>
+    </header>
+
+    <h4>Welcome to Spice and Spark Grill! We have luxurious food, comfy vacations, wonderful insights, and so much more! We are Hong Kong's most sustainable and environmentally friendly restaurant.</h4>
+    <img src="https://uploads.onecompiler.io/43njwqgnr/43njwy7bt/Restaurant%20-%20Minecraft.png" width="390" height="279">
+
+    <div id="menu">
+        <p class="style-ten">For our appetizer, we have:</p>
+        <div><span>1. Lobster Bisque with a touch of heavy cream and bread crumbs ($179)</span>
+            <button class="order-button">Order</button></div>
+        <div><span>2. Beef Tartare with lime, crab, and truffle mushrooms ($259)</span>
+            <button class="order-button">Order</button></div>
+        <div><span>3. Eggs benedict with charred beef skewers, cherry tomatoes, feta, and lettuce ($129)</span>
+            <button class="order-button">Order</button></div>
+        <div><span>4. Parma ham crackers topped with olives, sturgeon caviar, and jelly ($207)</span>
+            <button class="order-button">Order</button></div>
+
+        <p class="style-ten">For our main entreé, we have:</p>
+        <div><span>1. Prime A5 Wagyu with truffle gravy ($489)</span>
+            <button class="order-button">Order</button></div>
+        <div><span>2. Spaghetti alle Vongole with fresh parsley ($321)</span>
+            <button class="order-button">Order</button></div>
+        <div><span>3. Italian Carbonara traditionally served with guanciale ($302)</span>
+            <button class="order-button">Order</button></div>
+        <div><span>4. Seafood Risotto with heavy cream ($359)</span>
+            <button class="order-button">Order</button></div>
+        <div><span>5. Truffle spaghetti, with 4 cheeses and tuber aestivum ($478)</span>
+            <button class="order-button">Order</button></div>
+        <div><span>6. Pesto pasta (linguine) with fresh scallops and basil ($329)</span>
+            <button class="order-button">Order</button></div>
+        <div><span>7. Spaghetti Aglio Olio, fresh garlic and parsley ($299)</span>
+            <button class="order-button">Order</button></div>
+
+        <p class="style-ten">For our delightful dessert, we have:</p>
+        <div><span>1. Chocolate mousse ($119)</span>
+            <button class="order-button">Order</button></div>
+        <div><span>2. Hot lava cake with mixed berries and fruits ($125)</span>
+            <button class="order-button">Order</button></div>
+        <div><span>3. Triple sweet macaroons with whipped cream ($99)</span>
+            <button class="order-button">Order</button></div>
+        <div><span>4. New York-Style melted cheesecake with freshly baked bread crust ($99)</span>
+            <button class="order-button">Order</button></div>
+        <div><span>5. Sticky Toffee Pudding with white chocolate and whipped orlando cream ($112)</span>
+            <button class="order-button">Order</button></div>
+    </div>
+
+    <h3>Drinks and Cocktails</h3>
+    <div><span>1. Mojito ($49)</span>
+        <button class="order-button">Order</button></div>
+    <div><span>2. Martini ($55)</span>
+        <button class="order-button">Order</button></div>
+    <div><span>3. Daiquiri ($49)</span>
+        <button class="order-button">Order</button></div>
+    <div><span>4. Pina Colada ($49)</span>
+        <button class="order-button">Order</button></div>
+
+    <h3>Mocktails</h3>
+    <div><span>1. Virgin Mojito ($49)</span>
+        <button class="order-button">Order</button></div>
+    <div><span>2. Shirley Temple ($55)</span>
+        <button class="order-button">Order</button></div>
+    <div><span>3. Virgin Pina Colada ($49)</span>
+        <button class="order-button">Order</button></div>
+    <div><span>4. Nojito ($49)</span>
+        <button class="order-button">Order</button></div>
+
+    <h3>Soda</h3>
+    <div><span>1. Coke/Coke Zero ($29)</span>
+        <button class="order-button">Order</button></div>
+    <div><span>2. Sprite ($29)</span>
+        <button class="order-button">Order</button></div>
+    <div><span>3. Fanta ($29)</span>
+        <button class="order-button">Order</button></div>
+    <div><span>4. Seven Up ($29)</span>
+        <button class="order-button">Order</button></div>
+
+    <p>*Photos are for reference only*</p>
+    <p>*Subject to 10% service fee*</p>
+    <p>To become a member of our restaurant's alumni, scan this QR code for perks, discounts, and so much more!</p>
+    <img src="https://uploads.onecompiler.io/43njwqgnr/43njwy7bt/Rickrolling_QR_code.png" width="150" height="150">
+
+    <p class="style-ten">Sustainable Solutions:</p>
+    <p>As a consecutive yearly winner of the national Michelin food competition, we, Spice and Spark Grill try to make our industrialisation and production methods as sustainable as possible. First, we grow our own crops, making it purely organic to both the environment and our lovely animals. Growing crops can have beneficial purposes to life, whether we're talking about nutrients, etc. Second, we encourage our loyal customers to create less and less waste each time they consume our delicious meals. As the restaurant prepares fresh food everyday, we try to minimalise our usage rate, selling the excess to donations, ergo the people in need. We also manage our electrical/water use/rate, hoping to have an estimate of reducing the bill and fees by 5% each year.  Lastly, we try to compel and explore different food options instead of using meat, for example. We try to make vegan alternatives as tasty as the food we make, applying environmental components to our food too. This is used to protect the endangered animals our world is facing, as many things are killed for simple things that can be replaced with many alternatives. So, based on the exterior you see for our restaurant, no animal products are used but we use recycable plastic and wood..</p>
+
+    <div id="chatbot">
+        <h2>Climate Change Information Bot</h2>
+        <div id="messages"></div>
+        <input type="text" id="userInput" placeholder="Ask me about climate change..." />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        function sendMessage() {
+            const input = document.getElementById("userInput");
+            const message = input.value;
+            if (message.trim() === "") return;
+
+            displayMessage("You: " + message);
+
+            
+            let response = "I'm not sure about that.";
+            const lowerMessage = message.toLowerCase();
+
+            if (lowerMessage.includes("climate change")) {
+                response = "Climate change refers to significant changes in global temperatures and weather patterns over time.";
+            } else if (lowerMessage.includes("impact")) {
+                response = "Climate change impacts include extreme weather, rising sea levels, and loss of biodiversity.";
+            } else if (lowerMessage.includes("causes")) {
+                response = "The main causes of climate change are greenhouse gas emissions from burning fossil fuels, deforestation, and industrial processes.";
+            } else if (lowerMessage.includes("solutions")) {
+                response = "Solutions include reducing fossil fuel use, increasing energy efficiency, and transitioning to renewable energy sources.";
+            } else if (lowerMessage.includes("global warming")) {
+                response = "Global warming is a significant aspect of climate change, primarily caused by human activities.";
+            } else if (lowerMessage.includes("carbon footprint")) {
+                response = "Your carbon footprint is the total amount of greenhouse gases you produce, usually measured in units of carbon dioxide.";
+            } else if (lowerMessage.includes("renewable energy")) {
+                response = "Renewable energy sources include solar, wind, hydro, and geothermal energy, which are sustainable and have lower environmental impacts.";
+            } else if (lowerMessage.includes("biodiversity")) {
+                response = "Climate change threatens biodiversity by altering habitats, which can lead to species extinction.";
+            } else if (lowerMessage.includes("hi") || lowerMessage.includes("hello")) {
+                response = "Hi! Ask me about climate change, its impacts, causes, solutions, or renewable energy sources.";
+            
+            } else if (lowerMessage.includes("impacts")) {
+                response = "Climate change impacts include extreme weather, rising sea levels, and loss of biodiversity.";
+            }
+
+            setTimeout(() => {
+                displayMessage("Bot: " + response);
+            }, 1000);
+
+            input.value = "";
+        }
+
+        function displayMessage(message) {
+            const messages = document.getElementById("messages");
+            messages.innerHTML += "<div>" + message + "</div>";
+            messages.scrollTop = messages.scrollHeight; // Auto-scroll to the latest message
+        }
+    </script>
+</body>
+</html>

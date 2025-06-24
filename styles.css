@@ -1,0 +1,25 @@
+body{
+  padding: 20px;
+  background-color: gold;
+}
+.title {
+	color: #5C6AC4;
+}
+
+
+.sec-one {
+background-color: blue;
+border-style: solid;
+border-color: black;
+border-width : 8px;
+}
+.style-ten {
+padding: 5px;
+font-size: 25px; 
+color: red;
+font-weight: 25px;
+}
+.style-eleven {
+  background-color: green;
+color:white;
+}
