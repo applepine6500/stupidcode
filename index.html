@@ -74,13 +74,13 @@
 
     <h4>Welcome to Spice and Spark Grill! We have luxurious food, comfy vacations, wonderful insights, and so much more! We are Hong Kong's most sustainable and environmentally friendly restaurant.</h4>
     <img src="https://uploads.onecompiler.io/43njwqgnr/43njwy7bt/Restaurant%20-%20Minecraft.png" width="390" height="279">
-
+    <p>If you want to learn how to make pizza with sustainable ingredeints, so even at home you can combait climate change click on this link :https://www.youtube.com/watch?v=BN-bZg_letQ&ab_channel=EcoEating
     <div id="menu">
         <p class="style-ten">For our appetizer, we have:</p>
         <div><span>1. Lobster Bisque with a touch of heavy cream and bread crumbs ($179)</span>
             <button class="order-button">Order</button></div>
         <div><span>2. Beef Tartare with lime, crab, and truffle mushrooms ($259)</span>
-            <button class="order-button">Order</button></div>
+            <button class="order-button" onclick="window.location.href='http://127.0.0.1:5500/website2.html';">Order</button>
         <div><span>3. Eggs benedict with charred beef skewers, cherry tomatoes, feta, and lettuce ($129)</span>
             <button class="order-button">Order</button></div>
         <div><span>4. Parma ham crackers topped with olives, sturgeon caviar, and jelly ($207)</span>
@@ -147,12 +147,12 @@
 
     <p>*Photos are for reference only*</p>
     <p>*Subject to 10% service fee*</p>
-    <p>Behind this QR Code is an option for Spice and Spark Grill's limited edition coupon card, with immediate discounts of our restaurant's dishes, and exclusive memoirs of our community</p>
+    <p>To become a member of our restaurant's alumni, scan this QR code for perks, discounts, and so much more!</p>
     <img src="https://uploads.onecompiler.io/43njwqgnr/43njwy7bt/Rickrolling_QR_code.png" width="150" height="150">
 
     <p class="style-ten">Sustainable Solutions:</p>
     <p>As a consecutive yearly winner of the national Michelin food competition, we, Spice and Spark Grill try to make our industrialisation and production methods as sustainable as possible. First, we grow our own crops, making it purely organic to both the environment and our lovely animals. Growing crops can have beneficial purposes to life, whether we're talking about nutrients, etc. Second, we encourage our loyal customers to create less and less waste each time they consume our delicious meals. As the restaurant prepares fresh food everyday, we try to minimalise our usage rate, selling the excess to donations, ergo the people in need. We also manage our electrical/water use/rate, hoping to have an estimate of reducing the bill and fees by 5% each year.  Lastly, we try to compel and explore different food options instead of using meat, for example. We try to make vegan alternatives as tasty as the food we make, applying environmental components to our food too. This is used to protect the endangered animals our world is facing, as many things are killed for simple things that can be replaced with many alternatives. So, based on the exterior you see for our restaurant, no animal products are used but we use recycable plastic and wood..</p>
-
+    <p>At our restaurant, we prioritize sustainability by sourcing food and ingredients from local farms that use organic practices, making sure its fresh, seasonal produce while reducing our carbon footprint. Our seafood comes exclusively from fisheries that follow sustainable practices, and we choose meat and dairy from suppliers that are commited to animal welfare and humane farming. By designing seasonal menus, we make the best of local harvest, minimize waste. Our active stepts to reduce climate change in the community helps change climate change one resturant at a time.</p>
     <div id="chatbot">
         <h2>Climate Change Information Bot</h2>
         <div id="messages"></div>
@@ -208,5 +208,104 @@
             messages.scrollTop = messages.scrollHeight; // Auto-scroll to the latest message
         }
     </script>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa;
+        }
+        h1 {
+            text-align: center;
+            color: #00796b;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #00796b;
+            border-radius: 5px;
+        }
+        button-1 {
+            background-color: #00796b;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #004d40;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #c8e6c9;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Carbon Footprint Calculator</h1>
+    <div class="container">
+        <label for="meat">Daily servings of meat:</label>
+        <input type="number" id="meat" value="0" min="0">
+
+        <label for="dairy">Daily servings of dairy:</label>
+        <input type="number" id="dairy" value="0" min="0">
+
+        <label for="veggies">Daily servings of vegetables:</label>
+        <input type="number" id="veggies" value="0" min="0">
+
+        <label for="grains">Daily servings of grains:</label>
+        <input type="number" id="grains" value="0" min="0">
+
+        <button-1 onclick="calculateFootprint()">Calculate Carbon Footprint</button-1>
+
+        <div id="result" class="result" style="display:none;"></div>
+    </div>
+
+    <script>
+        function calculateFootprint() {
+            const meat = parseInt(document.getElementById("meat").value) || 0;
+            const dairy = parseInt(document.getElementById("dairy").value) || 0;
+            const veggies = parseInt(document.getElementById("veggies").value) || 0;
+            const grains = parseInt(document.getElementById("grains").value) || 0;
+
+            const meatFootprint = meat * 7.9;
+            const dairyFootprint = dairy * 3.2;
+            const veggieFootprint = veggies * 1.1;
+            const grainFootprint = grains * 0.6;
+
+            const totalFootprint = meatFootprint + dairyFootprint + veggieFootprint + grainFootprint;
+
+            const resultDiv = document.getElementById("result");
+            resultDiv.style.display = "block";
+            resultDiv.innerHTML = `Your estimated daily carbon footprint from food is: <strong>${totalFootprint.toFixed(2)} kg CO2e</strong>`;
+
+            
+        }
+    </script>
+    <p>Meat: One serving is typically 3 ounces (about 85 grams) of cooked meat.
+        Dairy: One serving is usually 1 cup (about 240 ml) of milk or yogurt, or 1.5 ounces (about 42 grams) of cheese.
+        Vegetables: One serving is generally 1 cup of raw vegetables or ½ cup of cooked vegetables.
+        Grains: One serving is often 1 slice of bread, ½ cup of cooked rice or pasta, or 1 ounce of dry cereal.</p>
 </body>
 </html>
